@@ -28,3 +28,4 @@ set softtabstop=4
 set expandtab
 
 let g:airline_theme='simple'
+let g:airline#extensions#tabline#enabled = 1
