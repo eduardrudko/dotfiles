@@ -21,6 +21,7 @@ set autoindent
 set ruler
 set laststatus=2
 set number
+set scrolloff=4
 
 set shiftwidth=4
 set softtabstop=4
