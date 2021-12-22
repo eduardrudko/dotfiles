@@ -69,7 +69,7 @@ COMPLETION_WAITING_DOTS="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=~/.zsh
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -124,8 +124,8 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-source $ZSH_CUSTOM/.zshrc_personal_env
-source $ZSH_CUSTOM/.zshrc_personal_aliases
+source $ZSH_CUSTOM/assets/.zshrc_personal_env
+source $ZSH_CUSTOM/assets/.zshrc_personal_aliases
 
-source $ZSH_CUSTOM/.zshrc_temporary_env
-source $ZSH_CUSTOM/.zshrc_temporary_aliases
+source $ZSH_CUSTOM/assets/.zshrc_temporary_env
+source $ZSH_CUSTOM/assets/.zshrc_temporary_aliases
