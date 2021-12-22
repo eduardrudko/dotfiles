@@ -2,8 +2,3 @@
 alias listening='lsof -PiTCP -sTCP:LISTEN'
 alias config='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vim='~/Applications/MacVim.app/Contents/MacOS/Vim'
-# Java
-alias java15='export JAVA_HOME=$JAVA_15_HOME'
-alias java8='export JAVA_HOME=$JAVA_8_HOME'
-# Vim
-alias vim='~/Applications/MacVim.app/Contents/MacOS/Vim'
