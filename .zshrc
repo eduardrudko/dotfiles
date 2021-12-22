@@ -124,8 +124,8 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-source $ZSH_CUSTOM/assets/.zshrc_personal_env
-source $ZSH_CUSTOM/assets/.zshrc_personal_aliases
+source $ZSH_CUSTOM/assets/.zshrc_p_env
+source $ZSH_CUSTOM/assets/.zshrc_p_aliases
 
-source $ZSH_CUSTOM/assets/.zshrc_temporary_env
-source $ZSH_CUSTOM/assets/.zshrc_temporary_aliases
+source $ZSH_CUSTOM/assets/.zshrc_t_env
+source $ZSH_CUSTOM/assets/.zshrc_t_aliases
