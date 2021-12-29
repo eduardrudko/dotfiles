@@ -1,11 +1,23 @@
 source ~/.vimrc
 
-"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
-"" Map \r to the Reformat Code action
-map \r <Action>(ReformatCode)
-
-"" Map <leader>d to start debug
-"map <leader>d <Action>(Debug)
-"" Map \b to toggle the breakpoint on the current line
-map \b <Action>(ToggleLineBreakpoint)
-" Find more examples here: https://jb.gg/share-ideavimrc
+" Options
+set ideajoin
+set idearefactormode=keep
+""" Keymappings -----------------------------
+" Idea
+nnoremap \e :e ~/.ideavimrc<CR>
+nnoremap \4 :action Terminal.OpenInTerminal<CR>
+nmap \b <Action>(ToggleLineBreakpoint)
+" Navigation
+nnoremap <c-\> :action SplitVertically<CR>
+nnoremap <c--> :action SplitHorizontally<CR>
+nnoremap <c-Q> :q<CR>
+" Editor
+nnoremap <leader>en :action EditSourceInNewWindow<CR>
+nmap <leader>r <Action>(ReformatCode)
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
+nnoremap <leader>zc :action CollapseAllRegions<CR>
+nnoremap <leader>zo :action ExpandAllRegions<CR>
