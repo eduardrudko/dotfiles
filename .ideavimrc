@@ -3,17 +3,39 @@ source ~/.vimrc
 " Options
 set ideajoin
 set idearefactormode=keep
+
+" Plugins
+set easymotion
 """ Keymappings -----------------------------
 " Idea
 nnoremap \e :e ~/.ideavimrc<CR>
 nnoremap \4 :action Terminal.OpenInTerminal<CR>
-nmap \b <Action>(ToggleLineBreakpoint)
-" Navigation
+nnoremap \f :action FileStructurePopup<CR>
+nnoremap \p :action JumpToLastWindow<CR>
+nnoremap \x :action HideAllWindows<CR>
+
+nnoremap ,b :action ToggleLineBreakpoint<CR>
+nnoremap ,d :action ContextDebug<CR>
+nnoremap ,r :action ContextRun<CR>
+nnoremap ,c :action RunClass<CR>
+nnoremap ,f :action ChooseRunConfiguration<CR>
+
+nnoremap gc :action GotoClass<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gd :action GotToDeclaration<CR>
+nnoremap gs :action GotToSuperMethod<CR>
+nnoremap gt :action GotoTest<CR>
+nnoremap gE :action GotoPreviousError<CR>
+nnoremap ge :action GotoNextError<CR>
+
+nnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>o :action OptimizeImports<CR>
+nnoremap <leader>u :action FindUsages<CR>
+" Shared
 nnoremap <c-\> :action SplitVertically<CR>
 nnoremap <c--> :action SplitHorizontally<CR>
 nnoremap <c-Q> :q<CR>
-" Editor
-nnoremap <leader>en :action EditSourceInNewWindow<CR>
+
 nmap <leader>r <Action>(ReformatCode)
 nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
@@ -21,3 +43,8 @@ nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
 nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
+nnoremap <leader>q :action CloseContent<CR>
+nnoremap <leader>qa :action CloseAllEditors<CR>
+
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <Plug>(easymotion-f)

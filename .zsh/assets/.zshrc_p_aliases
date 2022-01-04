@@ -1,9 +1,13 @@
-# General purpose
 alias listening='lsof -PiTCP -sTCP:LISTEN'
 alias config='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 alias vim='~/Applications/MacVim.app/Contents/MacOS/Vim'
 alias gvimopts='vim ~/.gvimrc'
-alias vimopts='vim ~/.vim/assets/.options.vim'
-alias vimkeys='vim ~/.vim/assets/.keymappings.vim'
+alias vimopts='vim ~/.vim/assets/.options.vim ~/.vim/assets/.keymappings.vim'
+
 alias zshpa='vim ~/.zsh/assets/.zshrc_p_aliases'
+alias zshpe='vim ~/.zsh/assets/.zshrc_p_env'
+alias zshta='vim ~/.zsh/assets/.zshrc_t_aliases'
+alias zshte='vim ~/.zsh/assets/.zshrc_t_env'
+
 alias zshcfg='vim ~/.zshrc'

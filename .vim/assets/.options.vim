@@ -25,12 +25,12 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-set t_Co=256
+set omnifunc=syntaxcomplete#Complete
+
 syntax on
 
-" let g:gruvbox_contrast_dark = 'hard'
-" autocmd vimenter * ++nested colorscheme gruvbox
-" colorscheme minimalist
 colorscheme badwolf
-let g:airline_theme='zenburn' "simple, serene, minimalist
+let g:airline_theme='serene' "simple, serene, minimalist, zenburn
 let g:airline#extensions#tabline#enabled = 1
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
