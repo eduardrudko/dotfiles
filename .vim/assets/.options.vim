@@ -32,5 +32,3 @@ syntax on
 colorscheme badwolf
 let g:airline_theme='serene' "simple, serene, minimalist, zenburn
 let g:airline#extensions#tabline#enabled = 1
-
-set runtimepath^=~/.vim/bundle/ctrlp.vim

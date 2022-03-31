@@ -5,12 +5,12 @@ set ideajoin
 set idearefactormode=keep
 
 " Plugins
-set easymotion
 set surround
+
 """ Keymappings -----------------------------
 " Idea
 nnoremap \e :e ~/.ideavimrc<CR>
-nnoremap \4 :action Terminal.OpenInTerminal<CR>
+nnoremap tt :action Terminal.OpenInTerminal<CR>
 nnoremap \f :action FileStructurePopup<CR>
 nnoremap \p :action JumpToLastWindow<CR>
 nnoremap \x :action HideAllWindows<CR>
@@ -46,6 +46,3 @@ nnoremap <leader>zc :action CollapseAllRegions<CR>
 nnoremap <leader>zo :action ExpandAllRegions<CR>
 nnoremap <leader>q :action CloseContent<CR>
 nnoremap <leader>qa :action CloseAllEditors<CR>
-
-map <leader>f <Plug>(easymotion-s)
-map <leader>e <Plug>(easymotion-f)
