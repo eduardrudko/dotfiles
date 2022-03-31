@@ -6,6 +6,7 @@ set idearefactormode=keep
 
 " Plugins
 set easymotion
+set surround
 """ Keymappings -----------------------------
 " Idea
 nnoremap \e :e ~/.ideavimrc<CR>

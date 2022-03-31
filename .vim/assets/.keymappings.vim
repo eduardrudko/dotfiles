@@ -1,6 +1,5 @@
 " General
 let mapleader = "'"
-map <c-c> <ESC>
 
 nnoremap <leader>l :nohl<CR><c-L> 
 " Navigation
@@ -13,6 +12,8 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <TAB> :bn<CR>
 nnoremap <S-TAB> :bp<CR>
+nnoremap <c-j> <c-d>
+nnoremap <c-k> <c-u>
 " Editing
 map Q gq
 map Y y$

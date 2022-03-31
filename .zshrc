@@ -76,7 +76,7 @@ ZSH_CUSTOM=~/.zsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions kubectl bundler asdf)
+plugins=(git zsh-autosuggestions kubectl bundler asdf zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -124,6 +124,8 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+# zsh-vi-mode
+
 source $ZSH_CUSTOM/assets/.zshrc_p_env
 source $ZSH_CUSTOM/assets/.zshrc_p_aliases
 
