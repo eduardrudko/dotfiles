@@ -1,7 +1,7 @@
 " General
 let mapleader = "'"
 
-nnoremap <leader>l :nohl<CR><c-L> 
+nnoremap <leader>l :nohl<CR><c-l>
 " Navigation
 nnoremap <c-\> :vsp<CR>
 nnoremap <c-_> :sp<CR>
@@ -10,6 +10,8 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+vnoremap <c-j> <c-d>
+vnoremap <c-k> <c-u>
 nnoremap <TAB> :bn<CR>
 nnoremap <S-TAB> :bp<CR>
 nnoremap <c-j> <c-d>
