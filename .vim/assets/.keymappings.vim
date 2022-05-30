@@ -16,6 +16,7 @@ nnoremap <TAB> :bn<CR>
 nnoremap <S-TAB> :bp<CR>
 nnoremap <c-j> <c-d>
 nnoremap <c-k> <c-u>
+nnoremap <c-d> <c-y>
 " Editing
 map Q gq
 map Y y$
