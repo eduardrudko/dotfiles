@@ -25,9 +25,26 @@ noremap <leader>p "*p
 noremap <leader>Y "+y
 noremap <leader>P "+p
 
+" dot for v
+vnoremap . :norm.<CR>
+
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
+" replace currently selected text with default register
+" without yanking it
+vnoremap <leader>p "_dP
+
 vnoremap <S-TAB> <gv
 vnoremap <TAB> >gv
 
 inoremap <C-@> <c-x><c-o>
 " Plugins
 nmap <leader>r <Plug>(Prettier)
+
+
+
+" Aliases
+"" File type
+:command Json :set ft=json 
