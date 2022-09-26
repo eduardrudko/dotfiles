@@ -13,15 +13,16 @@ tab-item.discarded .label-content {
   color: red;
 }
 
-tab-item.unread .label-content {
-  font-style: italic;
-}
-
 tab-item {
   --tab-size: 30px !important;
 }
+
 tab-item  tab-item-substance {
   height: var(--tab-size);
+}
+
+tab-item[data-current-uri^="https://github.com"] tab-item-substance {
+  background-color: hsl(300,71%,8%);
 }
 
 tab-item tab-item-substance:hover {
@@ -36,6 +37,7 @@ tab-item tab-counter {
 .newtab-button-box {
   display: none;
 }
+
 #tabbar {
   bottom: 0 !important; /* Eliminate dead space on bottom */
 }
