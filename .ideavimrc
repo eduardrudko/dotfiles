@@ -3,6 +3,7 @@ source ~/.vimrc
 " Options
 set ideajoin
 set idearefactormode=keep
+set visualbell
 
 " Plugins
 set surround

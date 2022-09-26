@@ -4,6 +4,8 @@ filetype on
 filetype indent plugin on
 filetype plugin on
 
+set autoread 
+
 set hidden
 set wildmenu
 set showcmd
@@ -25,10 +27,16 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
-set omnifunc=syntaxcomplete#Complete
+set belloff=all
 
 syntax on
 
 colorscheme badwolf
 let g:airline_theme='serene' "simple, serene, minimalist, zenburn
 let g:airline#extensions#tabline#enabled = 1
+
+" YCM
+let g:ycm_key_list_stop_completion = [ '<C-y>', '<Enter>' ]
+let g:ycm_filetype_specific_completion_to_disable = {
+      \ 'gitcommit': 1
+      \}
