@@ -40,3 +40,14 @@ let g:ycm_key_list_stop_completion = [ '<C-y>', '<Enter>' ]
 let g:ycm_filetype_specific_completion_to_disable = {
       \ 'gitcommit': 1
       \}
+
+
+" Curcor
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+set ttimeout
+set ttimeoutlen=1
+set listchars=tab:>-,trail:~,extends:>,precedes:<,space:.
+set ttyfast
