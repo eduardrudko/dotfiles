@@ -1,6 +1,7 @@
 alias listening='lsof -PiTCP -sTCP:LISTEN'
-alias config='/usr/local/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+# Change if use for than one users
 alias vim='~/Applications/MacVim.app/Contents/MacOS/Vim'
 alias gvimopts='vim ~/.gvimrc'
 alias vimopts='vim ~/.vim/assets/.options.vim ~/.vim/assets/.keymappings.vim'
