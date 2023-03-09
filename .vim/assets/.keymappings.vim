@@ -19,10 +19,10 @@ nnoremap <c-q> :q<CR>
 vnoremap <c-j> <c-d>
 vnoremap <c-k> <c-u>
 
-nnoremap <S-j> 3j
-nnoremap <S-k> 3k
-vnoremap <S-j> 3j
-vnoremap <S-k> 3k
+nnoremap <S-j> 2j
+nnoremap <S-k> 2k
+vnoremap <S-j> 2j
+vnoremap <S-k> 2k
 
 nnoremap <TAB> :bn<CR>
 nnoremap <S-TAB> :bp<CR>
