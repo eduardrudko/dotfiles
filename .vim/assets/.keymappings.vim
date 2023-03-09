@@ -2,18 +2,20 @@
 let mapleader = "'"
 
 nnoremap <leader>l :nohl<CR><c-l>
-" Navigation
 
+" Navigation
+"" windows
 nnoremap <c-\> :vsp<CR>
 nnoremap <c-_> :sp<CR>
 
 nnoremap <c-q> :q<CR> 
 
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
+"nnoremap <c-h> <c-w>h
+"nnoremap <c-l> <c-w>l
+"nnoremap <c-j> <c-w>j
+"nnoremap <c-k> <c-w>k
 
+" editor
 vnoremap <c-j> <c-d>
 vnoremap <c-k> <c-u>
 
@@ -27,8 +29,12 @@ nnoremap <S-TAB> :bp<CR>
 
 nnoremap <c-j> <c-d>
 nnoremap <c-k> <c-u>
-"turn off <c-d>
+"turn off default
 nnoremap <c-d> <c-y>
+nnoremap <c-u> <c-y>
+vnoremap <c-d> <c-y>
+vnoremap <c-u> <c-y>
+
 " Editing
 map Q gq
 map Y y$
