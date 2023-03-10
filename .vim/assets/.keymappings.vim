@@ -1,4 +1,4 @@
-  " General
+" General
 let mapleader = "'"
 
 nnoremap <leader>l :nohl<CR><c-l>
