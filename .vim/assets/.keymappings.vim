@@ -8,12 +8,11 @@ nnoremap <leader>l :nohl<CR><c-l>
 nnoremap <c-\> :vsp<CR>
 nnoremap <c-_> :sp<CR>
 
-"nnoremap <c-h> <c-w>h
-"nnoremap <c-l> <c-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 "nnoremap <c-j> <c-w>j
 "nnoremap <c-k> <c-w>k
 
-" nmap <c-q> :q<CR>
 "" Buffers
 nmap <S-t> :enew<cr>
 
