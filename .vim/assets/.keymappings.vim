@@ -1,21 +1,28 @@
-" General
+  " General
 let mapleader = "'"
 
 nnoremap <leader>l :nohl<CR><c-l>
 
 " Navigation
-"" Wwindows
+"" Windows
 nnoremap <c-\> :vsp<CR>
 nnoremap <c-_> :sp<CR>
-
-nnoremap <c-q> :q<CR> 
 
 "nnoremap <c-h> <c-w>h
 "nnoremap <c-l> <c-w>l
 "nnoremap <c-j> <c-w>j
 "nnoremap <c-k> <c-w>k
 
-" editor
+" nmap <c-q> :q<CR>
+"" Buffers
+nmap <S-t> :enew<cr>
+
+nmap <c-q> :bp <BAR> bd #<CR>
+
+nnoremap <TAB> :bn<CR>
+nnoremap <S-TAB> :bp<CR>
+
+""Editor
 nnoremap <S-j> <c-d>
 nnoremap <S-k> <c-u>
 vnoremap <S-j> <c-d>
@@ -26,10 +33,7 @@ nnoremap <c-k> 3k
 vnoremap <c-j> 3j
 vnoremap <c-k> 3k
 
-nnoremap <TAB> :bn<CR>
-nnoremap <S-TAB> :bp<CR>
-
-"turn off default
+""turn off default
 nnoremap <c-d> <c-y>
 nnoremap <c-u> <c-y>
 vnoremap <c-d> <c-y>

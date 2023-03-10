@@ -5,7 +5,6 @@ filetype indent plugin on
 filetype plugin on
 
 set autoread 
-
 set hidden
 set wildmenu
 set showcmd
@@ -32,22 +31,25 @@ set belloff=all
 syntax on
 
 colorscheme badwolf
-let g:airline_theme='serene' "simple, serene, minimalist, zenburn
-let g:airline#extensions#tabline#enabled = 1
 
-" YCM
-let g:ycm_key_list_stop_completion = [ '<C-y>', '<Enter>' ]
-let g:ycm_filetype_specific_completion_to_disable = {
-      \ 'gitcommit': 1
-      \}
-
+set ttimeout
+set ttimeoutlen=1
+set listchars=tab:>-,trail:~,extends:>,precedes:<,space:.
+set ttyfast
 
 " Curcor
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-set ttimeout
-set ttimeoutlen=1
-set listchars=tab:>-,trail:~,extends:>,precedes:<,space:.
-set ttyfast
+" Plugins (optional: YCM, ale)
+"" Airline
+let g:airline_theme='serene' "simple, serene, minimalist, zenburn
+let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+
+"" YCM
+let g:ycm_key_list_stop_completion = [ '<C-y>', '<Enter>' ]
+let g:ycm_filetype_specific_completion_to_disable = {
+      \ 'gitcommit': 1
+      \}
