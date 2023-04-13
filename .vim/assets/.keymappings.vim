@@ -22,21 +22,15 @@ nnoremap <TAB> :bn<CR>
 nnoremap <S-TAB> :bp<CR>
 
 ""Editor
-nnoremap <S-j> <c-d>
-nnoremap <S-k> <c-u>
-vnoremap <S-j> <c-d>
-vnoremap <S-k> <c-u>
+nnoremap <S-j> 3<c-e>
+nnoremap <S-k> 3<c-y>
+vnoremap <S-j> 3<c-e>
+vnoremap <S-k> 3<c-y>
 
 nnoremap <c-j> 3j
 nnoremap <c-k> 3k
 vnoremap <c-j> 3j
 vnoremap <c-k> 3k
-
-""turn off default
-nnoremap <c-d> <c-y>
-nnoremap <c-u> <c-y>
-vnoremap <c-d> <c-y>
-vnoremap <c-u> <c-y>
 
 vnoremap <S-TAB> <gv
 vnoremap <TAB> >gv
