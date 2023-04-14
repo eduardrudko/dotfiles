@@ -1,17 +1,16 @@
 " General
 let mapleader = "'"
 
+" Misc
 nnoremap <leader>l :nohl<CR><c-l>
 
 " Navigation
 "" Windows
-nnoremap <c-\> :vsp<CR>
-nnoremap <c-_> :sp<CR>
+nnoremap <c-\> <c-w>v
+nnoremap <c-_> <c-w>s
 
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-"nnoremap <c-j> <c-w>j
-"nnoremap <c-k> <c-w>k
 
 "" Buffers
 nmap <S-t> :enew<cr>
