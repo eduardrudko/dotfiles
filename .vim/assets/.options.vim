@@ -29,15 +29,25 @@ set expandtab
 
 set belloff=all
 
-syntax on
-
-colorscheme jellybeans
-" Reset colors of special group hightlights like spaces
-highlight SpecialKey ctermbg=NONE guibg=NONE
-
 set ttimeout
 set ttimeoutlen=1
 set ttyfast
+
+syntax on
+
+" Color scheme
+colorscheme jellybeans
+
+" Reset colors of special group hightlights like spaces
+highlight SpecialKey ctermbg=NONE
+
+" Terminal background
+let g:jellybeans_overrides = {
+\    'background': { 'ctermbg': 'none', '256ctermbg': 'none' },
+\}
+if has('termguicolors') && &termguicolors
+    let g:jellybeans_overrides['background']['guibg'] = 'none'
+endif
 
 " Cursor
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
