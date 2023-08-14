@@ -61,3 +61,4 @@ nmap <leader>r <Plug>(Prettier)
 " Aliases
 "" File type
 :command Json :set ft=json 
+:command Ruby :set ft=ruby
