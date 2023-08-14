@@ -20,6 +20,8 @@ set scrolloff=4
 set list
 set listchars=space:.
 
+set relativenumber
+
 set splitbelow
 set splitright
 
