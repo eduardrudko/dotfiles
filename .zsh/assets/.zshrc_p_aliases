@@ -12,3 +12,8 @@ alias zshta='vim ~/.zsh/assets/.zshrc_t_aliases'
 alias zshte='vim ~/.zsh/assets/.zshrc_t_env'
 
 alias zshcfg='vim ~/.zshrc'
+
+# cli tools
+# Rubocop
+alias rbcbA='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop -A'
+alias rbcb='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop'
