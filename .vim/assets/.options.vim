@@ -61,9 +61,3 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 "let g:airline_theme='serene' "simple, serene, minimalist, zenburn
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
-
-"" YCM
-let g:ycm_key_list_stop_completion = [ '<C-y>', '<Enter>' ]
-let g:ycm_filetype_specific_completion_to_disable = {
-      \ 'gitcommit': 1
-      \}

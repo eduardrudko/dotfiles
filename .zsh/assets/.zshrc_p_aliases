@@ -2,8 +2,6 @@ alias listening='lsof -PiTCP -sTCP:LISTEN'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Change if use for than one users
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias gvimopts='vim ~/.gvimrc'
 alias vimopts='vim ~/.vim/assets/.options.vim ~/.vim/assets/.keymappings.vim'
 
 alias zshpa='vim ~/.zsh/assets/.zshrc_p_aliases'
@@ -15,5 +13,5 @@ alias zshcfg='vim ~/.zshrc'
 
 # cli tools
 # Rubocop
-alias rbcbA='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop -A'
-alias rbcb='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop'
+alias rbcpA='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop -A'
+alias rbcp='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop'
