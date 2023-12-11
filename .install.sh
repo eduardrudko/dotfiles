@@ -31,4 +31,8 @@ is_runnable() {
   command -v "$@" >/dev/null 2>&1
 }
 
+config() {
+  git --git-dir="$HOME/.cfg/" --work-tree="$HOME" "$@"
+}
+
 main "%@"; exit
