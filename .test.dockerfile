@@ -19,8 +19,14 @@ RUN rm $HOME/.oh-my-zsh-install.sh
 RUN git clone --bare https://github.com/eduardrudko/dotfiles.git $HOME/.cfg
 RUN git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout -f
 RUN git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
+# 
 RUN rm $HOME/.install.sh 
 COPY .install.sh .install.sh
+RUN rm -rf .modules/
+COPY .modules/ .modules/
+run rm $HOME/.zshrc
+COPY .zshrc .zshrc
+#
 RUN chmod +x $HOME/.install.sh
 
 RUN $HOME/.install.sh

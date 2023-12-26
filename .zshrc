@@ -69,8 +69,7 @@ COMPLETION_WAITING_DOTS="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=~/.zsh
-export ZSH_CUSTOM=$ZSH_CUSTOM
+# ZSH_CUSTOM=~/.zsh
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -127,8 +126,8 @@ include () {
     [[ -f "$1" ]] && source "$1"
 }
 
-source $ZSH_CUSTOM/assets/.zshrc_p_env
-source $ZSH_CUSTOM/assets/.zshrc_p_aliases
+source ~/.zsh/assets/.zshrc_p_env
+source ~/.zsh/assets/.zshrc_p_aliases
 
-include $ZSH_CUSTOM/assets/.zshrc_t_env
-include $ZSH_CUSTOM/assets/.zshrc_t_aliases
+include ~/.zsh/assets/.zshrc_t_env
+include ~/.zsh/assets/.zshrc_t_aliases
