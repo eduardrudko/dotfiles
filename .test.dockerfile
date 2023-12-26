@@ -5,14 +5,23 @@ RUN apt-get update && \
   apt-get install -y \
   git \
   sudo \
+  curl \
   zsh
 
-RUN git clone --bare https://github.com/eduardrudko/dotfiles.git $HOME/.cfg
-RUN git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
-RUN rm $HOME/.install.sh
-COPY .install.sh /root/.install.sh
-RUN chmod +x $HOME/.install.sh
 WORKDIR /root
+
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+RUN curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh > $HOME/.oh-my-zsh-install.sh
+RUN chmod +x $HOME/.oh-my-zsh-install.sh
+RUN $HOME/.oh-my-zsh-install.sh
+RUN rm $HOME/.oh-my-zsh-install.sh
+# dotfiles
+RUN git clone --bare https://github.com/eduardrudko/dotfiles.git $HOME/.cfg
+RUN git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout -f
+RUN git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
+RUN rm $HOME/.install.sh 
+COPY .install.sh .install.sh
+RUN chmod +x $HOME/.install.sh
 
 RUN $HOME/.install.sh
 
