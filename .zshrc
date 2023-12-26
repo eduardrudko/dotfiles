@@ -70,6 +70,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=~/.zsh
+export ZSH_CUSTOM=$ZSH_CUSTOM
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
