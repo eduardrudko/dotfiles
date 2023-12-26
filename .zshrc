@@ -126,8 +126,8 @@ include () {
     [[ -f "$1" ]] && source "$1"
 }
 
-include $ZSH_CUSTOM/assets/.zshrc_p_env
-include $ZSH_CUSTOM/assets/.zshrc_p_aliases
+source $ZSH_CUSTOM/assets/.zshrc_p_env
+source $ZSH_CUSTOM/assets/.zshrc_p_aliases
 
-source $ZSH_CUSTOM/assets/.zshrc_t_env
-source $ZSH_CUSTOM/assets/.zshrc_t_aliases
+include $ZSH_CUSTOM/assets/.zshrc_t_env
+include $ZSH_CUSTOM/assets/.zshrc_t_aliases
