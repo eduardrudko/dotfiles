@@ -44,6 +44,6 @@ if [ -z "$SKIP_PACKAGES" ]; then
   fi
 fi
 
-for file in "$SCRIPTPATH"/modules/*/install.sh; do
+for file in "$SCRIPTPATH"/.modules/*/install.sh; do
   source "$file"
 done
