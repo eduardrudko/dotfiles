@@ -122,9 +122,12 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # For a full list of active aliases, run `alias`.
 #
 # zsh-vi-mode
+include () {
+    [[ -f "$1" ]] && source "$1"
+}
 
-source $ZSH_CUSTOM/assets/.zshrc_p_env
-source $ZSH_CUSTOM/assets/.zshrc_p_aliases
+include $ZSH_CUSTOM/assets/.zshrc_p_env
+include $ZSH_CUSTOM/assets/.zshrc_p_aliases
 
 source $ZSH_CUSTOM/assets/.zshrc_t_env
 source $ZSH_CUSTOM/assets/.zshrc_t_aliases
