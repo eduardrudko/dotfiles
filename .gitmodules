@@ -18,3 +18,7 @@
 	path = .vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 	shallow = true
+[submodule ".vim/bundle/jellybeans.vim"]
+	path = .vim/bundle/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim.git
+	shallow = true
