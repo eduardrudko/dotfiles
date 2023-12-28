@@ -1,4 +1,6 @@
 #!/usr/bin/zsh
-echo "=== Installling oh-my-zsh plugins==="
+#
+echo "=== Installling oh-my-zsh ==="
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh
+mv "$HOME/.zshrc.pre-oh-my-zsh" "$HOME/.zshrc"
