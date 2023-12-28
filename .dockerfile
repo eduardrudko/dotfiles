@@ -17,14 +17,6 @@ RUN git clone --bare --recursive https://github.com/eduardrudko/dotfiles.git $HO
 RUN git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout -f
 RUN git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no
 
-# Overwrites with local copies for quick test
-RUN rm $HOME/.install.sh 
-COPY .install.sh .install.sh
-RUN rm -rf .modules/
-COPY .modules/ .modules/
-RUN rm $HOME/.zshrc
-COPY .zshrc .zshrc
-
 RUN chmod +x $HOME/.install.sh
 
 RUN $HOME/.install.sh
