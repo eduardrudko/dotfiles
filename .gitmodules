@@ -4,6 +4,7 @@
 [submodule "/Users/erudko/.zsh/plugins/zsh-autosuggestions"]
 	path = /Users/erudko/.zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+	shallow = true
 [submodule "/Users/erudko/.zsh/plugins/zsh-vi-mode"]
 	path = /Users/erudko/.zsh/plugins/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode
