@@ -22,3 +22,16 @@
 	path = .vim/bundle/jellybeans.vim
 	url = https://github.com/nanotech/jellybeans.vim.git
 	shallow = true
+[submodule ".vim/bundle/vim-airline-themes"]
+	path = .vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+	shallow = true
+[submodule ".vim/bundle/vim-prettier"]
+	path = .vim/bundle/vim-prettier
+	url = https://github.com/prettier/vim-prettier
+	shallow = true
+[submodule ".vim/bundle/vim-surround"]
+	path = .vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+	shallow = true
+
