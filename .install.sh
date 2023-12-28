@@ -32,6 +32,9 @@ config() {
   git --git-dir="$HOME/.cfg/" --work-tree="$HOME" "$@"
 }
 
+echo "== Updating git submodules =="
+config -C "$SCRIPTPATH" submodule update --init
+
 if [ -z "$SKIP_PACKAGES" ]; then
   echo "== Installing packages =="
 
