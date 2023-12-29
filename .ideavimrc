@@ -20,9 +20,6 @@ nnoremap ,r :action ContextRun<CR>
 nnoremap ,c :action RunClass<CR>
 nnoremap ,f :action ChooseRunConfiguration<CR>
 
-nnoremap gE :action GotoPreviousError<CR>
-nnoremap ge :action GotoNextError<CR>
-
 nnoremap <leader>o :action OptimizeImports<CR>
 nnoremap <leader>u :action FindUsages<CR>
 " Shared
