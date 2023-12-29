@@ -3,7 +3,7 @@ curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/instal
 
 zshrc="$HOME/.zshrc"
 original_zshrc="$HOME/.zshrc.pre-oh-my-zsh"
-zshrc_assets=(".zsh/assets/.zshrc_t_env" ".zsh/assets/.zshrc_t_aliases")
+zshrc_assets=("$HOME/.zsh/assets/.zshrc_t_env" "$HOME/.zsh/assets/.zshrc_t_aliases")
 
 if [ -e "$original_zshrc" ]; then
   mv "$original_zshrc" "$zshrc"
