@@ -34,4 +34,7 @@
 	path = .vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 	shallow = true
-
+[submodule ".vim/bundle/endwise"]
+	path = .vim/bundle/endwise
+	url = https://tpope.io/vim/endwise.git
+	shallow = true
