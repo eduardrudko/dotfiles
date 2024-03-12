@@ -46,3 +46,6 @@
 	path = .vim/bundle/vim-eunuch
 	url = https://github.com/tpope/vim-eunuch.git
 	shallow = true
+[submodule ".vim/bundle/identLine"]
+	path = .vim/bundle/identLine
+	url = https://github.com/Yggdroot/indentLine.git
