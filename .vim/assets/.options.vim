@@ -61,3 +61,6 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 "let g:airline_theme='serene' "simple, serene, minimalist, zenburn
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+
+"" Quick-scope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']

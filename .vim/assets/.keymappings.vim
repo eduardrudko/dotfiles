@@ -31,6 +31,9 @@ nnoremap <c-k> 3k
 vnoremap <c-j> 3j
 vnoremap <c-k> 3k
 
+noremap 0 ^
+noremap ^ 0
+
 vnoremap <S-TAB> <gv
 vnoremap <TAB> >gv
 
