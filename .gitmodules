@@ -48,4 +48,9 @@
 	shallow = true
 [submodule ".vim/bundle/identLine"]
 	path = .vim/bundle/identLine
-	url = https://github.com/Yggdroot/indentLine.git
+	prl = https://github.com/Yggdroot/indentLine.git
+	shallow = true
+[submodule ".vim/bundle/quick-scope"]
+	path = .vim/bundle/quick-scope
+	url = https://github.com/unblevable/quick-scope.git
+	shallow = true
