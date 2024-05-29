@@ -15,7 +15,3 @@ alias zshcfg='vim ~/.zshrc'
 # Rubocop
 alias rbcpA='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop -A'
 alias rbcp='git diff --name-only master --diff-filter AMT | xargs bundle exec rubocop'
-
-# Git
-alias revws="git merge --no-commit --no-ff"
-alias revwe="git reset --merge --hard"
