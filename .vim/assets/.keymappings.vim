@@ -37,6 +37,9 @@ noremap ^ 0
 vnoremap <S-TAB> <gv
 vnoremap <TAB> >gv
 
+nnoremap <leader>j J
+vnoremap <leader>j J
+
 " Editing
 map Q gq
 map Y y$
