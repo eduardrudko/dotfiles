@@ -16,14 +16,11 @@ nnoremap \e :e ~/.ideavimrc<CR>
 nnoremap tt :action Terminal.OpenInTerminal<CR>
 nnoremap \p :action JumpToLastWindow<CR>
 
-nnoremap ,b :action ToggleLineBreakpoint<CR>
-nnoremap ,d :action ContextDebug<CR>
-nnoremap ,r :action ContextRun<CR>
-nnoremap ,c :action RunClass<CR>
-nnoremap ,f :action ChooseRunConfiguration<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
+nnoremap <leader>d :action ContextDebug<CR>
+nnoremap <leader>c :action RunClass<CR>
+nnoremap <leader>f :action ChooseRunConfiguration<CR>
 
-nnoremap <leader>o :action OptimizeImports<CR>
-nnoremap <leader>u :action FindUsages<CR>
 " Shared
 nnoremap <c-\> :action SplitVertically<CR>
 nnoremap <c--> :action SplitHorizontally<CR>
