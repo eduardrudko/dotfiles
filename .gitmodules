@@ -54,3 +54,7 @@
 	path = .vim/bundle/quick-scope
 	url = https://github.com/unblevable/quick-scope.git
 	shallow = true
+[submodule ".vim/bundle/vim-yaml-folds"]
+	path = .vim/bundle/vim-yaml-folds
+	url = https://github.com/pedrohdz/vim-yaml-folds.git
+	shallow = true

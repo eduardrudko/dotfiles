@@ -40,6 +40,13 @@ vnoremap <TAB> >gv
 nnoremap <leader>j J
 vnoremap <leader>j J
 
+"" Foldings
+nnoremap <leader>c zM
+vnoremap <leader>c zM
+nnoremap <leader>o zR
+vnoremap <leader>o zR
+
+
 " Editing
 map Q gq
 map Y y$
