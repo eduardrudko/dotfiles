@@ -41,10 +41,10 @@ nnoremap <leader>j J
 vnoremap <leader>j J
 
 "" Foldings
-nnoremap <leader>c zM
-vnoremap <leader>c zM
-nnoremap <leader>o zR
-vnoremap <leader>o zR
+nnoremap <leader>zc zM
+vnoremap <leader>zc zM
+nnoremap <leader>zo zR
+vnoremap <leader>zo zR
 
 
 " Editing
