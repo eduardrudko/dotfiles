@@ -68,8 +68,8 @@ vnoremap <leader>d "_d
 vnoremap <leader>p "_dP
 
 inoremap <C-@> <c-x><c-o>
-" Plugins
-nmap <leader>r <Plug>(Prettier)
+" format json
+nmap <leader>r :%!jq .<CR>
 
 " Aliases
 "" File type
