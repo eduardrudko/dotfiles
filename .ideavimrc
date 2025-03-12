@@ -25,7 +25,7 @@ nnoremap <c-\> :action SplitVertically<CR>
 nnoremap <c--> :action SplitHorizontally<CR>
 nnoremap <c-Q> :q<CR>
 
-nmap <leader>r <Action>(ReformatCode)
+" nmap <leader>r <Action>(ReformatCode)
 " nnoremap zc :action CollapseRegion<CR>
 " nnoremap zo :action ExpandRegion<CR>
 " nnoremap <leader>zc :action CollapseAllRegions<CR>
