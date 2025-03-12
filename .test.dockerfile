@@ -24,6 +24,8 @@ RUN rm -rf .modules/
 COPY .modules/ .modules/
 RUN rm $HOME/.zshrc
 COPY .zshrc .zshrc
+RUN rm $HOME/.apt-get_packages
+COPY .apt-get_packages .apt-get_packages
 
 RUN chmod +x $HOME/.install.sh
 

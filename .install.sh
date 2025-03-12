@@ -36,9 +36,9 @@ if [ -z "$SKIP_PACKAGES" ]; then
   echo "== Installing packages =="
 
   if is_runnable brew; then
-    brew install "$(cat "$SCRIPTPATH"/.homebrew_packages)"
+    brew install $(cat "$SCRIPTPATH"/.homebrew_packages)
   elif is_runnable apt-get; then
-    sudo apt-get install -y "$(cat "$SCRIPTPATH"/.apt-get_packages)"
+    sudo apt-get install -y $(cat "$SCRIPTPATH"/.apt-get_packages)
   else
     abort "Don't know how to install packages on this platform. Aborting..."
   fi
