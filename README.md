@@ -1,6 +1,6 @@
 # Installation:
 ## MacOS
-1. (Optional but recommended) Install iTerm2 to open up a vast range of customization and features for your terminal app - https://iterm2.com/
+1. Install iTerm2 - https://iterm2.com/
 2. Install homebrew - https://brew.sh/
 4. Install the following system packages: `git`, `curl`, `zsh`
 5. Navigate to `$HOME`
@@ -15,21 +15,16 @@
 TODO
 
 # Add new system package:
-Append a package name to the end of line separating it with a space to any of these files depending on your system:
-<br>
-<code>.apt-get_packages</code> - for linux based system
+Append a package name to the end of line separating it with a space to any of these files depending on your system:  
+`.apt-get_packages` - for linux based system  
+`.homebrew_packages` - for macos
 
-<code>.homebrew_packages</code> - for macos
 # Add a new vim plugin:
-
-1. config submodule add https://github.com/eduardrudko/example.git ./.vim/bundle/example
-
-2. Adjust .gitmodules to make the submodule shallow
-
-TODO: automate this
+1. Run `config submodule add https://github.com/{{vim_plugin_path}}.git ./.vim/bundle/{{vim_plagin_name}}`  
+2. Set the submodule to be shallow in `.gitmodules`
 
 # Docker
-<code>docker build -f .dockerfile -t my_env .</code>
+`docker build -f .dockerfile -t my_env .`
 
 ## Test changes before pushing them:
-<code>docker build --no-cache -f .test.dockerfile -t my_test_env .</code>
+`docker build --no-cache -f .test.dockerfile -t my_test_env .`
