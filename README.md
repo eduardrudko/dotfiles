@@ -6,7 +6,7 @@
 5. Navigate to `$HOME`
 6. Run the following git commands:  
 `git clone --bare --recursive https://github.com/eduardrudko/dotfiles.git $HOME/.cfg` - to clone bare configuration repository  
-`git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout -f` - to checkout the actual configuration files  
+`git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout -f` - to checkout the actual snapshot of the dotfiles  
 `git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no` - to hide untracked files from working dir
 7. Run install script: `sh .install.sh`
 8. Reload your terminal app
