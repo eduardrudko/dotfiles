@@ -14,14 +14,18 @@
 ## Linux based systems
 TODO
 
-# Add new system package:
+# Add a new system package:
 Append a package name to the end of line separating it with a space to any of these files depending on your system:  
 `.apt-get_packages` - for linux based system  
 `.homebrew_packages` - for macos
 
-# Add a new vim plugin:
-1. Run `config submodule add https://github.com/{{vim_plugin_path}}.git ./.vim/bundle/{{vim_plagin_name}}`  
-2. Set the submodule to be shallow in `.gitmodules`
+# Add a new module:
+TODO
+
+# Add a new submodule:
+1. Go to `$HOME`
+2. Run `config submodule add https://github.com/{{submodule_name}}.git .{{submodule_path}}/{{submodule_name}}`  
+3. Set submodule to be shallow `config config -f .gitmodules submodule..{{submodule_path}}/{{submodule_name}}.shallow true`
 
 # Docker
 `docker build -f .dockerfile -t my_env .`
