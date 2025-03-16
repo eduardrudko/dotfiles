@@ -68,7 +68,7 @@ let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" Plugins (optional: YCM, ale)
+" Plugins
 "" Airline
 "let g:airline_theme='serene' "simple, serene, minimalist, zenburn
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
@@ -76,3 +76,6 @@ let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
 
 "" Quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+"" highlightedyank
+let g:highlightedyank_highlight_in_visual = 0

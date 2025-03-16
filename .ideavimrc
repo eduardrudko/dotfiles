@@ -10,6 +10,12 @@ set surround
 set commentary
 set quickscope
 set textobj-entire
+set highlightedyank
+
+" Options
+"" Plugin options
+""" highlightedyank
+let g:highlightedyank_highlight_color = "rgba(255, 152, 0, 50)"
 
 " Keymappings -----------------------------
 "" Idea
