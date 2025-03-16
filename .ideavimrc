@@ -1,14 +1,15 @@
 source ~/.vimrc
 
-" Options
+""" IdeaVim Options
 set ideajoin
 set idearefactormode=keep
 set visualbell
 
-" Plugins
+""" Plugins
 set surround
 set commentary
 set quickscope
+set textobj-entire
 
 """ Keymappings -----------------------------
 " Idea
@@ -16,9 +17,12 @@ nnoremap \e :e ~/.ideavimrc<CR>
 nnoremap tt :action Terminal.OpenInTerminal<CR>
 nnoremap \p :action JumpToLastWindow<CR>
 
-nnoremap <leader>b :action ToggleLineBreakpoint<CR>
 nnoremap <leader>c :action RunClass<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
 nnoremap <leader>f :action ChooseRunConfiguration<CR>
+
+nmap [[ <Action>(MethodUp)
+nmap ]] <Action>(MethodDown)
 
 " Shared
 nnoremap <c-\> :action SplitVertically<CR>
