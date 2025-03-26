@@ -70,6 +70,10 @@ vnoremap <leader>p "_dP
 inoremap <C-@> <c-x><c-o>
 " format json
 nmap <leader>r :%!jq .<CR>
+"Plugins
+""Switch
+nnoremap <leader>s :Switch<CR>
+nnoremap <leader>S :SwitchReverse<CR>
 
 " Aliases
 "" File type

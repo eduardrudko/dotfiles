@@ -11,6 +11,7 @@ set commentary
 set quickscope
 set textobj-entire
 set highlightedyank
+set switch
 
 " Options
 "" Plugin options
