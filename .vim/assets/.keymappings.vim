@@ -44,7 +44,11 @@ vnoremap <leader>j J
 " Absolute path to file: %:p
 " Filename only: %:t
 " Directory name only: %:p:h
+
+" Copy current line ref
 map <leader>n :let @*=fnamemodify(expand("%"), ":~:.") . ":" . line(".")<CR>
+" Copy current file ref
+map <leader>N :let @*=expand("%")<CR>
 
 "" Foldings
 nnoremap <leader>zc zM

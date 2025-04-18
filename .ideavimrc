@@ -40,5 +40,8 @@ nmap <leader>r <Action>(ReformatCode)
 
 nnoremap <leader>q :action CloseContent<CR>
 nnoremap <leader>qa :action CloseAllEditors<CR>
-
+spec/models/extract/credit_card_spec.rb:2
+" Copy current line ref
 map <leader>n :action CopyReference<CR>
+" Copy current file ref
+map <leader>N :action CopyContentRootPath<CR>
