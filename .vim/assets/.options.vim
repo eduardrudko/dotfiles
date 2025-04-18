@@ -79,3 +79,5 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 "" highlightedyank
 let g:highlightedyank_highlight_in_visual = 0
+highlight HighlightedyankRegion ctermbg=237 guibg=#404040 " change color of yanked region
+let g:highlightedyank_highlight_duration = 250 " change hightlight duration

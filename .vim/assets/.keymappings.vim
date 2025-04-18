@@ -40,6 +40,12 @@ vnoremap <TAB> >gv
 nnoremap <leader>j J
 vnoremap <leader>j J
 
+" Relative path to file: %
+" Absolute path to file: %:p
+" Filename only: %:t
+" Directory name only: %:p:h
+map <leader>n :let @*=fnamemodify(expand("%"), ":~:.") . ":" . line(".")<CR>
+
 "" Foldings
 nnoremap <leader>zc zM
 vnoremap <leader>zc zM
@@ -70,6 +76,7 @@ vnoremap <leader>p "_dP
 inoremap <C-@> <c-x><c-o>
 " format json
 nmap <leader>r :%!jq .<CR>
+
 "Plugins
 ""Switch
 nnoremap <leader>s :Switch<CR>
