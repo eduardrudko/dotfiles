@@ -20,7 +20,7 @@ let g:highlightedyank_highlight_color = "rgba(255, 152, 0, 50)"
 
 " Keymappings -----------------------------
 "" Idea
-nnoremap \e :e ~/.ideavimrc<CR>
+map \e :e ~/.ideavimrc<CR>
 
 nnoremap <leader>c :action RunClass<CR>
 
@@ -52,6 +52,15 @@ nmap <leader>gi <Action>(GotoImplementation)
 nmap <leader>gu <Action>(ShowUsages)
 nmap <leader>gt <Action>(GotoTest)
 
+map <leader>sr <Action>(RecentFiles)
+map <leader>sc <Action>(GotoClass)
+map <leader>sf <Action>(GotoFile)
+map <leader>ss <Action>(GotoSymbol)
+map <leader>sa <Action>(GotoAction)
+map <leader>st <Action>(FindInPath)
+map <leader>sp <Action>(RecentProjectListGroup)
+
+map <leader>fs <Action>(FileStructurePopup)
 " Copy current line ref
 map <leader>n :action CopyReference<CR>
 " Copy current file ref
