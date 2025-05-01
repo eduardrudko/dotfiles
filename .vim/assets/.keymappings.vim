@@ -1,5 +1,5 @@
 " General
-let mapleader = "'"
+let mapleader = " "
 
 " Misc
 nnoremap <leader>l :nohl<CR><c-l>
@@ -56,15 +56,9 @@ vnoremap <leader>zc zM
 nnoremap <leader>zo zR
 vnoremap <leader>zo zR
 
-
 " Editing
 map Q gq
 map Y y$
-
-noremap <leader>y "*y
-noremap <leader>p "*p
-noremap <leader>Y "+y
-noremap <leader>P "+p
 
 " dot for v
 vnoremap . :norm.<CR>
@@ -77,9 +71,8 @@ vnoremap <leader>d "_d
 " without yanking it
 vnoremap <leader>p "_dP
 
-inoremap <C-@> <c-x><c-o>
 " format json
-nmap <leader>r :%!jq .<CR>
+nmap <leader>fj :%!jq .<CR>
 
 "Plugins
 ""Switch
@@ -90,3 +83,4 @@ nnoremap <leader>S :SwitchReverse<CR>
 "" File type
 :command Json :set ft=json 
 :command Ruby :set ft=ruby
+:command Yaml :set ft=yaml

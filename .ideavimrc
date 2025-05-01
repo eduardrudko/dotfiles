@@ -1,10 +1,10 @@
 source ~/.vimrc
 
-" IdeaVim Options
+"  Options
 set ideajoin
 set idearefactormode=keep
 set visualbell
-'
+
 " Plugins
 set surround
 set commentary
@@ -21,25 +21,36 @@ let g:highlightedyank_highlight_color = "rgba(255, 152, 0, 50)"
 " Keymappings -----------------------------
 "" Idea
 nnoremap \e :e ~/.ideavimrc<CR>
-nnoremap tt :action Terminal.OpenInTerminal<CR>
 
 nnoremap <leader>c :action RunClass<CR>
-nnoremap <leader>b :action ToggleLineBreakpoint<CR>
-nnoremap <leader>f :action ChooseRunConfiguration<CR>
 
-nmap [[ <Action>(MethodUp)
-nmap ]] <Action>(MethodDown)
+nmap [[ :action MethodUp<CR>
+nmap ]] :action MethodDown<CR>
 
 "" Editor
+" Split windows
 nnoremap <c-\> :action SplitVertically<CR>
 nnoremap <c--> :action SplitHorizontally<CR>
 
-nnoremap <c-Q> :q<CR>
+nmap <leader>m :action MoveEditorToOppositeTabGroup<CR>
+nmap <leader>o :action OpenEditorInOppositeTabGroup<CR>
 
-nmap <leader>r <Action>(ReformatCode)
-
-nnoremap <leader>q :action CloseContent<CR>
+" Close windows
+nnoremap <leader>qq :action CloseContent<CR>
 nnoremap <leader>qa :action CloseAllEditors<CR>
+
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>rv <Action>(IntroduceVariable)
+map <leader>rf <Action>(IntroduceField)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+nmap <leader>gd <Action>(GotoDeclaration)
+nmap <leader>gy <Action>(GotoTypeDeclaration)
+nmap <leader>gi <Action>(GotoImplementation)
+nmap <leader>gu <Action>(ShowUsages)
+nmap <leader>gt <Action>(GotoTest)
 
 " Copy current line ref
 map <leader>n :action CopyReference<CR>

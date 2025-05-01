@@ -1,17 +1,18 @@
 set nocompatible
 
-filetype on
-filetype indent plugin on
-filetype plugin on
+filetype plugin indent on
 
 set autoread
 set hidden
 set wildmenu
+
 set showcmd
+
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+
 set backspace=indent,eol,start
 set autoindent
 set ruler
@@ -34,6 +35,8 @@ set belloff=all
 set ttimeout
 set ttimeoutlen=1
 set ttyfast
+
+set clipboard+=unnamed
 
 syntax on
 
