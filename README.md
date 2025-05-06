@@ -32,3 +32,6 @@ TODO
 
 ## Test changes before pushing them:
 `docker build --no-cache -f .test.dockerfile -t my_test_env .`
+
+## TODO List:
+- Add global gitignore with IDE related files.
