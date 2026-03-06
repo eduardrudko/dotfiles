@@ -60,6 +60,8 @@ map <leader>sa <Action>(GotoAction)
 map <leader>st <Action>(FindInPath)
 map <leader>sp <Action>(RecentProjectListGroup)
 
+map <leader>b <Action>(ToggleLineBreakpoint)
+
 map <leader>fs <Action>(FileStructurePopup)
 " Copy current line ref
 map <leader>n :action CopyReference<CR>

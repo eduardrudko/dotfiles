@@ -38,6 +38,8 @@ set ttyfast
 
 set clipboard+=unnamed
 
+set maxmempattern=10000
+
 syntax on
 
 " Folding
