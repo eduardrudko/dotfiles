@@ -10,7 +10,7 @@
 `git --git-dir=$HOME/.cfg/ --work-tree=$HOME config --local status.showUntrackedFiles no` - to hide untracked files from working dir
 7. Run install script: `./.install.sh`
 8. Fully quit iTerm2 (Cmd+Q) and reopen it - the install script points it at `.iterm2/com.googlecode.iterm2.plist`, which sets the profile, colors and font. iTerm2 only picks this up on a full relaunch, not a plain window reload.
-9. If the powerlevel10k prompt shows boxes or `?` instead of icons, the Nerd Font (`font-meslo-lg-nerd-font`, installed via `.homebrew_packages`) isn't active yet - check Preferences > Profiles > Eduard > Text and confirm the font resolves, then relaunch iTerm2 again.
+9. If the powerlevel10k prompt shows boxes or `?` instead of icons, the Nerd Font (`font-meslo-lg-nerd-font`, installed via `.homebrew_packages`) isn't active yet - check Preferences > Profiles > <Profile> Text and confirm the font resolves, then relaunch iTerm2 again.
 
 ## Linux based systems
 TODO
