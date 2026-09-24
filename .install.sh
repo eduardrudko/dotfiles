@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 abort() {
   printf "%s\n" "$@"
   exit 1
